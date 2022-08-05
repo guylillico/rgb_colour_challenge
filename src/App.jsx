@@ -4,7 +4,9 @@ import ColourCanvas from "./components/ColourCanvas"
 const App = () => {
   return (
     <div className="App">
-      <ColourCanvas width={256} height={128} />
+      <h1>RGB Colour Challenge</h1>
+      <ColourCanvas />
+      <ColourCanvas effect="static" />
     </div>
   )
 }
