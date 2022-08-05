@@ -5,7 +5,16 @@
 
 body {
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.container {
+  padding: 15px;
 }

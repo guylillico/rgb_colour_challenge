@@ -1,14 +1,16 @@
 import React from "react"
-import { generateColourArray, shuffleColours } from "../util/colour"
+import { ColourCanvasWrapper, ColourCanvasDesc } from "./ColourCanvas.styled"
+import { generateColourArray, shuffleColours } from "../../util/colour"
 
 /**
  * ColourCanvas is a component that displays a canvas with 32,768 dicrete colours
  *
+ * @param {String} desc - description appearing above the canvas element
  * @param {String} effect - optional effect to describe the appearance of the canvas
  *
  * @returns canvas element showing all 32,768 discrete colours
  */
-const ColourCanvas = ({ effect }) => {
+const ColourCanvas = ({ desc, effect }) => {
   const canvasWidth = 256
   const canvasHeight = 128
   const colourCanvasRef = React.useRef(null)
@@ -34,7 +36,12 @@ const ColourCanvas = ({ effect }) => {
     }
   }, [])
 
-  return <canvas ref={colourCanvasRef} />
+  return (
+    <ColourCanvasWrapper>
+      {desc && <ColourCanvasDesc>{desc}</ColourCanvasDesc>}
+      <canvas ref={colourCanvasRef} />
+    </ColourCanvasWrapper>
+  )
 }
 
 export default ColourCanvas
