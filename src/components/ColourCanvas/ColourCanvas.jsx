@@ -1,6 +1,6 @@
 import React from "react"
 import { ColourCanvasWrapper, ColourCanvasDesc } from "./ColourCanvas.styled"
-import { generateColourArray, shuffleColours, maxMinColours, drippyColours, newOne } from "../../util/colour"
+import { generateColourArray, shuffleColours, maxMinColours, drippyColours } from "../../util/colour"
 
 /**
  * ColourCanvas is a component that displays a canvas with 32,768 dicrete colours
