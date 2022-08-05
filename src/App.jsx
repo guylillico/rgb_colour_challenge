@@ -14,6 +14,14 @@ const App = () => {
           desc="Version 2: Algorithm applied to shuffle the colours array, resulting in a 'static' effect"
           effect="static"
         />
+        <ColourCanvas
+          desc="Version 3: Algorithm applied to rearrange the colours array in maximum minimum form, resulting in a 'bars' effect"
+          effect="bars"
+        />
+        <ColourCanvas
+          desc="Version 4: Sorting of the colours array by the product of r, g, and b values to produce a 'dripping' effect"
+          effect="drippy"
+        />
       </div>
     </div>
   )
