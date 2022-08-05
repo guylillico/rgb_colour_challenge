@@ -96,7 +96,7 @@ export const maxMinColours = (array, n) => {
 }
 
 /**
- * drippyColours is a function that simply sorts the colours array by the product of the r, g and b values
+ * drippyColours is a function that simply sorts the colours array by the sum of the r, g and b values
  * which produces a visual 'dripping' effect
  *
  * @param {array} array - array of 32,768 discrete colours

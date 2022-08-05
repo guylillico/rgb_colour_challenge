@@ -19,7 +19,7 @@ const App = () => {
           effect="bars"
         />
         <ColourCanvas
-          desc="Version 4: Sorting of the colours array by the product of r, g, and b values to produce a 'dripping' effect"
+          desc="Version 4: Sorting of the colours array by the sum of r, g, and b values to produce a 'dripping' effect"
           effect="drippy"
         />
       </div>
