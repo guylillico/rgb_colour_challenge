@@ -1,4 +1,5 @@
 import React from "react"
+import { generateColourArray } from "../util/colour"
 
 const ColourCanvas = ({ width, height }) => {
   const colourCanvasRef = React.useRef(null)
@@ -8,6 +9,8 @@ const ColourCanvas = ({ width, height }) => {
 
     canvasElement.width = width
     canvasElement.height = height
+
+    let coloursArray = generateColourArray()
   }, [])
 
   return <canvas ref={colourCanvasRef} style={{ border: "1px solid #000" }} />
